@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="518.0" style="-fx-background-color: #CFF1EF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FdlbController">
+   <children>
+      <TableView fx:id="table" layoutX="22.0" layoutY="120.0" prefHeight="282.0" prefWidth="469.0">
+        <columns>
+          <TableColumn fx:id="sid" prefWidth="112.0" resizable="false" text="Student ID" />
+          <TableColumn fx:id="bid" prefWidth="108.0" resizable="false" text="Book ID" />
+            <TableColumn fx:id="td" prefWidth="132.0" resizable="false" text="Take Date" />
+            <TableColumn fx:id="rd" prefWidth="116.0" resizable="false" text="Return Date" />
+        </columns>
+      </TableView>
+      <CheckBox fx:id="check" layoutX="43.0" layoutY="68.0" mnemonicParsing="false" text="show only not returned" />
+      <Separator layoutX="-5.0" layoutY="101.0" prefHeight="0.0" prefWidth="522.0" style="-fx-background-color: black;" />
+      <ComboBox fx:id="combo" layoutX="22.0" layoutY="26.0" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #FBCFFC;" />
+      <TextField fx:id="text" disable="true" layoutX="217.0" layoutY="26.0" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: ;" />
+      <Button fx:id="bt" disable="true" layoutX="408.0" layoutY="26.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #FBCFFC;" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

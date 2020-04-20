@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="721.0" style="-fx-background-color: #CFF1EF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentinfoController">
+   <children>
+      <TableView fx:id="table" layoutX="31.0" layoutY="116.0" prefHeight="366.0" prefWidth="663.0">
+        <columns>
+            <TableColumn fx:id="stu_id" prefWidth="75.0" resizable="false" text="Student id" />
+          <TableColumn fx:id="name" prefWidth="245.0" resizable="false" text="Name" />
+          <TableColumn fx:id="dept" prefWidth="152.0" resizable="false" text="Department" />
+            <TableColumn fx:id="year" prefWidth="66.0" resizable="false" text="Year" />
+            <TableColumn fx:id="phn" prefWidth="124.0" resizable="false" text="Phone No" />
+        </columns>
+      </TableView>
+      <Separator layoutX="10.0" layoutY="86.0" prefHeight="0.0" prefWidth="704.0" style="-fx-background-color: black;" />
+      <ComboBox fx:id="combo" layoutX="42.0" layoutY="41.0" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #FBCFFC;" />
+      <TextField fx:id="text" disable="true" layoutX="258.0" layoutY="41.0" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: ;">
+         <tooltip>
+            <Tooltip text="Case sensitive" />
+         </tooltip>
+      </TextField>
+      <Button fx:id="bt" disable="true" layoutX="474.0" layoutY="41.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #FBCFFC;" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
